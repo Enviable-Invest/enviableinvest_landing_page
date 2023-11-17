@@ -33,6 +33,13 @@ $("document").ready(function () {
   $("[data-scroll=faq]").click(function () {
     scroll("faq");
   });
+
+  $("[data-scroll=terms]").click(function () {
+    scroll("terms");
+  });
+  $("[data-scroll=policies]").click(function () {
+    scroll("policies");
+  });
 });
 
 // AOS library init
