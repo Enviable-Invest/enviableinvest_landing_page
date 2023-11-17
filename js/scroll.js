@@ -27,14 +27,8 @@ $("document").ready(function () {
     $("aside").removeClass("slide-right");
   }
 
-  $("[data-scroll=pricing]").click(function () {
-    scroll("pricing");
-  });
-  $("[data-scroll=community]").click(function () {
-    scroll("community");
-  });
-  $("[data-scroll=support]").click(function () {
-    scroll("support");
+  $("[data-scroll=app-stores]").click(function () {
+    scroll("app-stores");
   });
   $("[data-scroll=faq]").click(function () {
     scroll("faq");

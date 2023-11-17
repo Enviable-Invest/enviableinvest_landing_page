@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#0057FF",
+        main: "#124EC5",
         mainLight: "#F0F5FF",
-        mainDark: "#2C2643",
+        mainDark: "#001A52",
       },
     },
     screens: {
