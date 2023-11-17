@@ -1,26 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="public/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="public/aos/aos.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="public/slick/slick.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="public/slick/slick-theme.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="public/tailwind.min.js"></script>
-    <script src="js/tailwind-config.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -33,7 +25,7 @@
           >
             <!-- Logo -->
             <div class="flex justify-between items-center">
-              <a href="/">
+              <a href="/public">
                 <img
                   class="w-28 lg:w-36"
                   src="public/images/logo.svg"
@@ -61,35 +53,32 @@
                 <a
                   class="text-sm text-main font-semibold hover:underline"
                   href=""
-                  >Link 1</a
+                  >About us</a
                 >
                 <a
                   class="text-sm text-main font-semibold hover:underline"
                   href=""
-                  >Link 2</a
+                  >How enviable works</a
                 >
                 <a
                   class="text-sm text-main font-semibold hover:underline"
-                  href=""
-                  >Link 3</a
+                  href="#faq"
+                  data-scroll="faq"
                 >
-                <a
-                  class="text-sm text-main font-semibold hover:underline space-x-1"
-                  href=""
-                  ><span>Link 4</span> <i class="fa-solid fa-caret-down"></i>
+                  FAQ
                 </a>
+                <!--                <a-->
+                <!--                  class="text-sm text-main font-semibold hover:underline space-x-1"-->
+                <!--                  href=""-->
+                <!--                  ><span>Link 4</span> <i class="fa-solid fa-caret-down"></i>-->
+                <!--                </a>-->
               </div>
 
               <div class="flex items-center space-x-9">
                 <a
-                  class="text-sm text-main font-semibold hover:underline"
+                  class="text-sm text-white bg-main hover:bg-main/70 px-7 rounded-lg py-3 font-semibold"
                   href=""
-                  >Sign in</a
-                >
-                <a
-                  class="text-sm text-white bg-main hover:bg-main/70 px-9 rounded-lg py-2 font-semibold"
-                  href=""
-                  >Invest</a
+                  >Download enviable invest</a
                 >
               </div>
             </ul>
@@ -111,7 +100,10 @@
             class="flex flex-col-reverse space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="zoom-out-left"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 The money app for Africans.
               </h1>
@@ -121,29 +113,30 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 illo sit saepe odio tenetur perferendis.
               </p>
-              <div class="flex justify-center md:justify-start space-x-5">
-                <a
-                  href="https://apps.apple.com/ng/app/enviable/id1593176698"
-                  target="_blank"
-                  class="flex space-x-3 items-center font-semibold py-3 px-5 rounded-xl text-white bg-mainDark text-sm lg:text-base"
+
+              <form
+                class="flex space-x-2 h-10 md:h-12 justify-center lg:justify-start"
+              >
+                <input
+                  placeholder="email@email.com"
+                  type="email"
+                  class="px-3 text-xs md:text-sm rounded-md border-gray-300 border-solid border-[0.1rem] h-full w-8/12"
+                />
+                <button
+                  class="h-full text-xs md:text-sm text-white bg-main hover:bg-main/70 px-7 rounded-md font-semibold"
                 >
-                  <i class="fa-brands fa-apple"></i>
-                  <span>Apple store</span>
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.enviable"
-                  target="_blank"
-                  class="flex space-x-3 items-center font-semibold py-3 px-5 rounded-xl text-white bg-mainDark text-sm lg:text-base"
-                >
-                  <i class="fa-brands fa-google-play"></i>
-                  <span>Google play </span>
-                </a>
-              </div>
+                  Join
+                </button>
+              </form>
             </div>
             <!-- Hero text ends -->
 
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-end">
+            <div
+              data-aos="zoom-out-right"
+              data-aos-delay="300"
+              class="w-full md:w-7/12 flex justify-center md:justify-end"
+            >
               <img
                 src="public/images/transferwise-two-color.svg"
                 loading="lazy"
@@ -165,7 +158,8 @@
           >
             <!-- Card -->
             <div
-              class="h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
+              data-aos="zoom-in"
+              class="ani-1 h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
             >
               <div>
                 <span class="p-3 bg-main/10 rounded-full">
@@ -183,7 +177,8 @@
             <!-- Card ends -->
             <!-- Card -->
             <div
-              class="h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
+              data-aos="zoom-in"
+              class="ani-2 h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
             >
               <div>
                 <span class="p-3 bg-main/10 rounded-full">
@@ -201,7 +196,8 @@
             <!-- Card ends -->
             <!-- Card -->
             <div
-              class="h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
+              data-aos="zoom-in"
+              class="ani-3 h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
             >
               <div>
                 <span class="p-3 bg-main/10 rounded-full">
@@ -219,6 +215,7 @@
             <!-- Card ends -->
             <!-- Card -->
             <div
+              data-aos="zoom-in"
               class="h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
             >
               <div>
@@ -237,6 +234,7 @@
             <!-- Card ends -->
             <!-- Card -->
             <div
+              data-aos="zoom-in"
               class="h-36 md:h-44 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
             >
               <div>
@@ -260,13 +258,16 @@
 
         <!-- Hero section 2 -->
         <section
-          class="min-h-[6 0vh] md:min-h-[40vh] lg:min-h-[70vh] flex items-center"
+          class="min-h-[60vh] md:min-h-[40vh] lg:min-h-[70vh] flex items-center"
         >
           <div
             class="flex flex-col-reverse space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-right"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -286,7 +287,10 @@
             <!-- Hero text ends -->
 
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-end">
+            <div
+              data-aos="fade-left"
+              class="w-full md:w-7/12 flex justify-center md:justify-end"
+            >
               <img
                 src="public/images/resting-two-color.svg"
                 loading="lazy"
@@ -307,7 +311,10 @@
             class="flex flex-col-reverse space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-start">
+            <div
+              data-aos="fade-right"
+              class="w-full md:w-7/12 flex justify-center md:justify-start"
+            >
               <img
                 src="public/images/authentication-two-color-b35f8.svg"
                 loading="lazy"
@@ -318,7 +325,10 @@
             <!-- Hero image ends -->
 
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-left"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -341,7 +351,10 @@
             class="flex flex-col-reverse space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-right"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -361,7 +374,10 @@
             <!-- Hero text ends -->
 
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-end">
+            <div
+              data-aos="fade-left"
+              class="w-full md:w-7/12 flex justify-center md:justify-end"
+            >
               <img
                 src="public/images/money.svg"
                 loading="lazy"
@@ -382,7 +398,10 @@
             class="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-start">
+            <div
+              data-aos="fade-right"
+              class="w-full md:w-7/12 flex justify-center md:justify-start"
+            >
               <img
                 src="public/images/ECommerce.svg"
                 loading="lazy"
@@ -393,7 +412,10 @@
             <!-- Hero image ends -->
 
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-left"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -424,7 +446,10 @@
             class="flex flex-col-reverse space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-right"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -444,7 +469,10 @@
             <!-- Hero text ends -->
 
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-end">
+            <div
+              data-aos="fade-left"
+              class="w-full md:w-7/12 flex justify-center md:justify-end"
+            >
               <img
                 src="public/images/customer-service-two-color-c1406.svg"
                 loading="lazy"
@@ -465,7 +493,10 @@
             class="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between items-center w-full"
           >
             <!-- Hero image -->
-            <div class="w-full md:w-7/12 flex justify-center md:justify-start">
+            <div
+              data-aos="fade-right"
+              class="w-full md:w-7/12 flex justify-center md:justify-start"
+            >
               <img
                 src="public/images/piggy-bank-two-color.svg"
                 loading="lazy"
@@ -476,7 +507,10 @@
             <!-- Hero image ends -->
 
             <!-- Hero text -->
-            <div class="space-y-4 w-full md:w-5/12 text-center md:text-left">
+            <div
+              data-aos="fade-left"
+              class="space-y-4 w-full md:w-5/12 text-center md:text-left"
+            >
               <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-main">
                 Lorem ipsum dolor sit amet, consectetur.
               </h1>
@@ -499,109 +533,89 @@
         </section>
         <!-- Hero 7 ends -->
 
-        <!-- Testimonials -->
+        <!-- FAQ -->
         <section
+          data-tag="faq"
           class="min-h-[60vh] md:min-h-[40vh] lg:min-h-[40vh] flex items-center"
         >
-          <div class="w-full text-3xl space-y-8">
-            <h1 class="text-center font-bold text-main">
-              Don't just take our word for it
-            </h1>
+          <div data-aos="flip-up" class="w-full space-y-8">
+            <h1 class="text-3xl text-center font-bold text-main">FAQs</h1>
 
-            <div class="slider">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="hidden md:block w-1/2">
+                <img
+                  src="public/images/customer-service-two-color-c1406%20(copy).svg"
+                  class="w-9/12"
+                  loading="lazy"
+                  alt="FAQ"
+                />
+              </div>
+
               <div
-                class="h-36 md:h-52 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
+                data-aos-delay="150"
+                data-aos="flip-down"
+                class="md:w-1/2 space-y-3"
               >
-                <div>
-                  <p class="text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus, accusantium id? Lorem ipsum dolor sit. Lorem
-                    ipsum dolor sit amet.
+                <div
+                  class="faq-collpase space-y-3 py-4 border-b-[0.1rem] border-solid border-gray-300"
+                >
+                  <div class="flex justify-between">
+                    <h5 class="font-semibold text-main text-sm md:text-base">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h5>
+                    <button class="text-main">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <p class="hidden text-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium consectetur culpa eius illum, laboriosam libero
+                    quas quidem recusandae sequi soluta tempore voluptatibus
+                    voluptatum. Blanditiis maiores nulla porro veniam voluptate
+                    voluptates?
                   </p>
                 </div>
-                <div class="flex items-center space-x-5">
-                  <img
-                    src="public/images/avatar.jpg"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="avatar"
-                    loading="lazy"
-                  />
-                  <h5 class="text-xs md:text-sm font-bold">
-                    Babajide Duroshola
-                  </h5>
-                </div>
-              </div>
-              <div
-                class="h-36 md:h-52 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
-              >
-                <div>
-                  <p class="text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus, accusantium id? Lorem ipsum dolor sit. Lorem
-                    ipsum dolor sit amet.
+                <div
+                  class="faq-collpase space-y-3 py-4 border-b-[0.1rem] border-solid border-gray-300"
+                >
+                  <div class="flex justify-between">
+                    <h5 class="font-semibold text-main text-sm md:text-base">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h5>
+                    <button class="text-main">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <p class="hidden text-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium consectetur culpa eius illum, laboriosam libero
+                    quas quidem recusandae sequi soluta tempore voluptatibus
+                    voluptatum. Blanditiis maiores nulla porro veniam voluptate
+                    voluptates?
                   </p>
                 </div>
-                <div class="flex items-center space-x-5">
-                  <img
-                    src="public/images/avatar-2.jpg"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="avatar"
-                    loading="lazy"
-                  />
-                  <h5 class="text-xs md:text-sm font-bold">
-                    Babajide Duroshola
-                  </h5>
-                </div>
-              </div>
-              <div
-                class="h-36 md:h-52 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
-              >
-                <div>
-                  <p class="text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus, accusantium id? Lorem ipsum dolor sit. Lorem
-                    ipsum dolor sit amet.
+                <div class="faq-collpase space-y-3 py-4">
+                  <div class="flex justify-between">
+                    <h5 class="font-semibold text-main text-sm md:text-base">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h5>
+                    <button class="text-main">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <p class="hidden text-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium consectetur culpa eius illum, laboriosam libero
+                    quas quidem recusandae sequi soluta tempore voluptatibus
+                    voluptatum. Blanditiis maiores nulla porro veniam voluptate
+                    voluptates?
                   </p>
                 </div>
-                <div class="flex items-center space-x-5">
-                  <img
-                    src="public/images/avatar.jpg"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="avatar"
-                    loading="lazy"
-                  />
-                  <h5 class="text-xs md:text-sm font-bold">
-                    Babajide Duroshola
-                  </h5>
-                </div>
               </div>
-              <div
-                class="h-36 md:h-52 px-4 py-5 space-y-7 shadow-lg shadow-main/10"
-              >
-                <div>
-                  <p class="text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus, accusantium id? Lorem ipsum dolor sit. Lorem
-                    ipsum dolor sit amet.
-                  </p>
-                </div>
-                <div class="flex items-center space-x-5">
-                  <img
-                    src="public/images/avatar-2.jpg"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="avatar"
-                    loading="lazy"
-                  />
-                  <h5 class="text-xs md:text-sm font-bold">
-                    Babajide Duroshola
-                  </h5>
-                </div>
-              </div>
-              <!-- Add more slides as needed -->
             </div>
           </div>
         </section>
-        <!-- Testimonials end-->
+        <!-- FAQ end-->
 
         <!-- Our partners-->
         <section
@@ -686,9 +700,9 @@
       </main>
 
       <footer class="space-y-8 mt-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
           <div>
-            <a href="/">
+            <a href="/public">
               <img
                 class="w-20 lg:w-32"
                 src="public/images/logo.svg"
@@ -698,53 +712,42 @@
             </a>
           </div>
           <div class="space-y-4">
-            <h6 class="font-semibold text-main">Personal</h6>
-            <ul class="space-y-3 text-sm font-medium text-gray-600">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-            </ul>
-          </div>
-          <div class="space-y-4">
             <h6 class="font-semibold text-main">Buisness</h6>
             <ul class="space-y-3 text-sm font-medium text-gray-600">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
+              <li><a href="">How it works</a></li>
             </ul>
           </div>
           <div class="space-y-4">
             <h6 class="font-semibold text-main">Company</h6>
             <ul class="space-y-3 text-sm font-medium text-gray-600">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">About enviable invest</a></li>
             </ul>
           </div>
           <div class="space-y-4">
             <h6 class="font-semibold text-main">Help</h6>
             <ul class="space-y-3 text-sm font-medium text-gray-600">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
+              <li><a href="mailto:mail@enviable.com">Reach out to Us</a></li>
+              <li>
+                <a class="flex items-center space-x-1" href="">
+                  <i class="fa-brands fa-google-play"></i>
+                  <span>Download on Play store</span>
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center space-x-1" href="">
+                  <i class="fa-brands fa-apple"></i>
+                  <span>Download on Apple store</span>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="space-y-4">
-            <h6 class="font-semibold text-main">Transparency</h6>
+            <h6 class="font-semibold text-main">Legal</h6>
             <ul class="space-y-3 text-sm font-medium text-gray-600">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 1</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Terms and Conditions</a></li>
             </ul>
           </div>
         </div>
@@ -843,29 +846,35 @@
 
         <div class="space-y-4 text-xs text-gray-600">
           <p>
-            &copy; <span id="date"></span> Enviable Trasnsports Ltd (Company No.11472232). All
-            rights reserved.
+            &copy; <span id="date"></span> Enviable investment international
+            limited. All rights reserved.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ducimus eveniet ex minima nobis numquam quae quas vel! Earum, reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem commodi cumque eveniet, expedita in iste nemo numquam officiis quasi quia quidem quis quo sapiente similique, suscipit tempore veniam vitae.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, repellat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos ducimus eveniet ex minima nobis numquam quae quas vel!
+            Earum, reprehenderit. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. A autem commodi cumque eveniet, expedita in iste
+            nemo numquam officiis quasi quia quidem quis quo sapiente similique,
+            suscipit tempore veniam vitae. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Facilis, mollitia. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Deleniti, repellat.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor dolorem, enim fugiat id in magni molestiae nostrum omnis pariatur porro recusandae reiciendis sunt voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi, distinctio doloribus odit quam quia quod recusandae similique unde voluptatem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            dolor dolorem, enim fugiat id in magni molestiae nostrum omnis
+            pariatur porro recusandae reiciendis sunt voluptatum? Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Animi commodi,
+            distinctio doloribus odit quam quia quod recusandae similique unde
+            voluptatem.
           </p>
-        <div>
+          <div></div>
+        </div>
+      </footer>
     </div>
 
-
-
-        </div>
-
-
-      </footer>
-
-      <script src="public/jquery/jquery-3.7.1.min.js"></script>
-      <script src="public/slick/slick.min.js"></script>
-
-      <script src="js/script.js"></script>
+    <script src="public/jquery/jquery-3.7.1.min.js"></script>
+    <script src="public/aos/aos.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
