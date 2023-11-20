@@ -19,7 +19,7 @@ $(function () {
 
   $(".faq-collpase").each(function (index, element) {
     const btn = $(element).find("button");
-    const content = $(element).find("p");
+    const content = $(element).find("#content");
 
     btn.on("click", function () {
       const icon = btn.find("i");
