@@ -12,6 +12,18 @@ $(function () {
     $("#collapse-nav").removeClass("flex");
   }
 
+  function onCommingSoonModaltoggle() {
+    if ($("#commingsoon").hasClass("hidden")) {
+      $("#commingsoon").removeClass("hidden");
+      $("#commingsoon").addClass("grid");
+      return;
+    }
+    $("#commingsoon").addClass("hidden");
+    $("#commingsoon").removeClass("grid");
+  }
+
+  $("button#togglecs").on("click", onCommingSoonModaltoggle);
+
   $("#navbar-toggle").on("click", onNavbarTogge);
 
   const currentYear = new Date().getFullYear();

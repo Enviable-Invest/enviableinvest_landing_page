@@ -15,10 +15,49 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="">
+    <!-- Coming soon -->
+
+    <dialog
+      id="commingsoon"
+      class="fixed w-full h-full backdrop-brightness-50 bg-white/5 z-50 top-0 hidden place-items-center"
+    >
+      <div
+        data-aos="zoom-in"
+        class="bg-white p-3 rounded-lg w-11/12 md:w-8/12 lg:w-4/12 h-max"
+      >
+        <div class="flex justify-end">
+          <button id="togglecs" class="text-xl text-gray-600 hover:text-main">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center space-y-3 md:w-1/2">
+            <h2 class="text-xl text-main font-semibold">
+              Comming soon to your mobile app stores
+            </h2>
+            <p class="text-sm text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              ad consectetur odio
+            </p>
+          </div>
+          <div class="flex md:w-1/2 justify-center md:justify-end">
+            <img
+              src="assets/images/mobile_app.png"
+              loading="lazy"
+              class="object-cover w-6/12 md:w-10/12"
+              alt="Mobile app"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Coming soon end -->
+
     <!-- Header -->
 
-    <header class="sticky top-0 bg-white shadow-lg z-50">
+    <header class="sticky top-0 bg-white shadow-lg z-40">
       <div class="mx-auto px-4 lg:px-0 container">
         <nav class="flex flex-col space-y-5 lg:flex-row lg:items-center py-4">
           <div
@@ -116,22 +155,20 @@
               </p>
 
               <div class="flex justify-center md:justify-start space-x-5">
-                <a
-                  href="https://apps.apple.com/ng/app/enviable/id1593176698"
-                  target="_blank"
+                <button
+                  id="togglecs"
                   class="flex space-x-3 items-center font-semibold py-3 px-5 rounded-xl text-white bg-mainDark text-sm lg:text-base"
                 >
                   <i class="fa-brands fa-apple"></i>
                   <span>Apple store</span>
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.enviable"
-                  target="_blank"
+                </button>
+                <button
+                  id="togglecs"
                   class="flex space-x-3 items-center font-semibold py-3 px-5 rounded-xl text-white bg-mainDark text-sm lg:text-base"
                 >
                   <i class="fa-brands fa-google-play"></i>
                   <span>Google play </span>
-                </a>
+                </button>
               </div>
               <!-- 
               <form
@@ -610,25 +647,22 @@
         </div>
 
         <div class="flex space-x-3">
-          <a
-            href="https://apps.apple.com/ng/app/enviable/id1593176698"
-            target="_blank"
+          <button
+            id="togglecs"
             class="flex space-x-3 items-center font-semibold py-2 px-4 rounded-xl text-white bg-mainDark text-xs"
           >
             <i class="fa-brands fa-apple"></i>
             <span>Apple</span>
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.enviable"
-            target="_blank"
+          </button>
+          <button
+            id="togglecs"
             class="flex space-x-3 items-center font-semibold py-2 px-4 rounded-xl text-white bg-mainDark text-xs"
           >
             <i class="fa-brands fa-google-play"></i>
             <span>Play store</span>
-          </a>
+          </button>
           <a
-            href="https://play.google.com/store/apps/details?id=com.enviable"
-            target="_blank"
+            href="/"
             class="flex space-x-3 items-center font-semibold py-2 px-4 rounded-xl text-white bg-mainDark text-xs"
           >
             <i class="fa-solid fa-globe"></i>
