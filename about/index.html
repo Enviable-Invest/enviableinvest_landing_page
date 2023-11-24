@@ -92,10 +92,14 @@
     </header>
     <!-- Header ends -->
 
-    <div class="container mx-auto px-4 lg:px-0">
-      <main>
+    <main>
+      <!-- Banner -->
+      <section
+        class="h-[25vh] md:h-[40vh] lg:h-[50vh] bg-[url(/assets/images/about_banner.webp)] bg-center bg-cover bg-no-repeat backdrop-blur-sm"
+      ></section>
+      <!-- Banner ends -->
+      <div class="container mx-auto px-4 lg:px-0">
         <!-- Hero section -->
-
         <section
           data-tag="app-stores"
           class="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] flex items-center"
@@ -180,36 +184,70 @@
 
         <section
           data-tag="app-stores"
-          class="min-h-[50vh] md:min-h-[40vh] lg:min-h-[70vh]"
+          class="min-h-[50vh] md:min-h-[40vh] lg:min-h-[70vh] my-20"
         >
-          <div
-            class="flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16"
-          >
-            <div class="space-y-5">
-              <img
-                src="../assets/images/avatar.jpg"
-                class="w-36 h-36 md:w-56 md:h-56 object-cover rounded-full mx-auto"
-                loading="lazy"
-                alt="Avatar"
-              />
+          <div class="space-y-10">
+            <h2
+              class="text-main text-xl md:text-3xl lg:text-4xl text-center font-bold"
+            >
+              Gallery
+            </h2>
 
-              <div class="text-center text-sm md:text-base">
-                <h6 class="font-semibold text-main">Olufemi Akanbobs</h6>
-                <p>Founder & CEO</p>
-              </div>
-            </div>
-            <div class="space-y-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <img
-                src="../assets/images/avatar-2.jpg"
-                class="w-36 h-36 md:w-56 md:h-56 object-cover rounded-full mx-auto"
+                src="/assets/images/about_gallery/1.webp"
+                alt="Image 1"
                 loading="lazy"
-                alt="Avatar"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
               />
-
-              <div class="text-center text-sm md:text-base">
-                <h6 class="font-semibold text-main">Olufemi Akanbobs</h6>
-                <p>Co-Founder & CEO</p>
-              </div>
+              <img
+                src="/assets/images/about_gallery/2.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/3.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/4.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/5.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/6.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/7.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/8.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
+              <img
+                src="/assets/images/about_gallery/9.webp"
+                alt="Image 1"
+                loading="lazy"
+                class="w-full h-[11rem] md:h-[15rem] object-cover opacity-30 hover:scale-105 hover:opacity-100 duration-300 rounded-lg"
+              />
             </div>
           </div>
         </section>
@@ -251,15 +289,16 @@
           </div>
         </section>
         <!-- Mobile app display end-->
-      </main>
-
+      </div>
+    </main>
+    <div class="container mx-auto px-4 lg:px-0">
       <footer class="space-y-8 mt-20">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
           <div>
             <a href="/">
               <img
                 class="w-20 lg:w-32"
-                src="assets/images/logo_long.png"
+                src="/assets/images/logo_long.png"
                 loading="lazy"
                 alt="logo"
               />
