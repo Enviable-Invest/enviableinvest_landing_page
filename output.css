@@ -851,6 +851,26 @@ video {
   height: max-content;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
+.h-\[9rem\] {
+  height: 9rem;
+}
+
+.h-\[9\.5rem\] {
+  height: 9.5rem;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
@@ -2933,6 +2953,7 @@ video {
 
 body {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (min-width: 480px) {
@@ -3157,6 +3178,10 @@ body {
 
   .lg\:h-\[50vh\] {
     height: 50vh;
+  }
+
+  .lg\:h-\[23rem\] {
+    height: 23rem;
   }
 
   .lg\:min-h-\[40vh\] {
