@@ -818,6 +818,10 @@ video {
   height: 11rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-72 {
   height: 18rem;
 }
@@ -849,10 +853,6 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .min-h-\[40vh\] {
@@ -1026,6 +1026,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {

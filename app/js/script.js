@@ -29,28 +29,22 @@ $(function () {
   const currentYear = new Date().getFullYear();
   $("#date").text(currentYear);
 
-  $(".faq-collpase").each(function (index, element) {
-    const btn = $(element).find("button");
-    const content = $(element).find("#content");
+  $(".faq-collpase").click(function (e) {
+    e.preventDefault();
+    let content = $(this).find("#content");
+    let icon = $(this).find("i");
 
-    btn.on("click", function () {
-      const icon = btn.find("i");
+    if (content.hasClass("hidden")) {
+      content.removeClass("hidden");
+      content.addClass("block");
+      icon.addClass("fa-minus");
+      icon.removeClass("fa-plus");
+      return;
+    }
 
-      if (icon.hasClass("fa-plus")) {
-        icon.removeClass("fa-plus");
-        icon.addClass("fa-times");
-      } else {
-        icon.removeClass("fa-times");
-        icon.addClass("fa-plus");
-      }
-
-      if (content.hasClass("hidden")) {
-        content.removeClass("hidden");
-        content.addClass("block");
-        return;
-      }
-      content.addClass("hidden");
-      content.removeClass("block");
-    });
+    content.addClass("hidden");
+    content.removeClass("block");
+    icon.removeClass("fa-minus");
+    icon.addClass("fa-plus");
   });
 });
