@@ -2320,6 +2320,11 @@ video {
   padding-right: 2.25rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2353,11 +2358,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .pb-16 {
@@ -3084,16 +3084,16 @@ body {
     height: 11rem;
   }
 
+  .md\:h-72 {
+    height: 18rem;
+  }
+
   .md\:h-\[15rem\] {
     height: 15rem;
   }
 
   .md\:h-\[40vh\] {
     height: 40vh;
-  }
-
-  .md\:h-72 {
-    height: 18rem;
   }
 
   .md\:min-h-\[40vh\] {
