@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:css": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "build:css": "npx tailwindcss -i ./input.css -o ./output.css",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
     "build": "npm run build:css && npm run copy",
-    "copy": "npx ncp ./ dist",
+    "copy": "npx ncp ./src dist",
     "serve": "npx serve dist -l 3000"
   },
   "keywords": [],
